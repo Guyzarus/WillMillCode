@@ -1,0 +1,60 @@
+@import "../../../assets/styles/common";
+
+.DetailCard{
+    &Main {
+      &Pod {
+        @include borderRadius0;
+        height: 100%;
+
+      }
+    }
+    &Pod {
+      &0 {
+        max-width: 100%;
+        height: calc(550/16 * 1rem);
+        @include FlexColumnCenter;
+        @include appOutline0;
+        border-radius: $border_radius1;
+
+        &Title {
+          &0 {
+            font-weight: bold;
+            font-size: $body-bold;
+          }
+        }
+
+        &Img {
+          &0 {
+            flex: 0 0 35%;
+            height: 35%;
+            width: 100%;
+            border-radius: $border_radius1 $border_radius1 0 0;
+          }
+        }
+
+
+
+        &Item {
+          &0 {
+
+            width: 100%;
+            flex:1 0 65%;
+            padding:$spacing3;
+            @include FlexColumnCenter;
+          }
+          &1{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin:0 0 $spacing2 0;
+          }
+        }
+
+
+      }
+    }
+  }
+
+
+

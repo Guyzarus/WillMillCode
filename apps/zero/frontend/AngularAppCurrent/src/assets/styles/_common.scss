@@ -1,0 +1,43 @@
+@import "./color_pallete";
+@import "./fonts";
+@import "./spacing";
+@import "./layouts";
+
+@mixin outline1 {
+  border: 1px solid red;
+}
+
+@mixin outline2 {
+  border: 1px solid blue;
+}
+
+@mixin outline3 {
+  border: 1px solid green;
+}
+
+@mixin outline4 {
+  border: 1px dotted white;
+}
+
+
+@mixin borderRadius0{
+  border-radius: calc(8/16 * 1rem);
+}
+
+@mixin borderRadius1{
+  border-radius: calc(20/16 * 1rem);
+}
+
+@mixin appOutline0{
+  border: calc(1/16 * 1rem) solid $dark-grey;
+}
+
+
+$border-radius0:calc(8/16 * 1rem);
+$border-radius1:calc(20/16 * 1rem);
+$app-transition-time:1s;
+:root{
+  --border-radius0:#{$border_radius0};
+  --border-radius1:#{$border_radius1};
+  --app-transition-time:1s
+}

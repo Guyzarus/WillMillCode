@@ -1,0 +1,38 @@
+@import "../../../assets/styles/common";
+
+.Keys{
+    height: 100%;
+    &Main {
+      &Pod {
+        @include borderRadius0;
+        height: 100%;
+
+      }
+    }
+    &Pod {
+      &0 {
+        p,a{
+          font-size: calc(12/16 * 1rem);
+        }
+        max-width: 100%;
+        height: 100%;
+        display: flex;
+
+        &Item {
+          &0 {
+            display: flex;
+            align-items: center;
+            * {
+              margin: 0 $spacing1 0 0;
+              font-size: $text;
+            }
+          }
+        }
+
+
+      }
+    }
+  }
+
+
+

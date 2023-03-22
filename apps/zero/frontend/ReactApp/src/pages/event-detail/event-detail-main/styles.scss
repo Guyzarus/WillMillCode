@@ -1,0 +1,229 @@
+@import "../../../assets/styles/common";
+
+.EventDetailMain {
+  @mixin SharedImg0 {
+    border-radius: calc(20 / 16 * 1rem);
+    width: 100%;
+    height: 100%;
+  }
+  @mixin SharedText0{
+    font-size: $display-small;
+    font-family: 'Gilroy-Bold';
+  }
+  height: 100%;
+  h1 {
+    font-size: calc(48 / 16 * 1rem);
+  }
+  h2{
+    @include SharedText0
+  }
+  &Main {
+    &Pod {
+      @include borderRadius0;
+      padding: $spacing5 0;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      overflow: hidden auto;
+    }
+
+    &Item {
+      &0 {
+        display: flex;
+      }
+      &1 {
+        flex: 0 0 50%;
+      }
+      &2 {
+        flex: 0 0 50%
+      }
+    }
+  }
+  &Pod {
+    &0 {
+      max-width: 100%;
+    }
+    &1 {
+      flex: 0 0 30%;
+      height: 30%;
+      display: flex;
+      margin:0 0 $spacing3 0;
+      &Img {
+        &0 {
+          @include SharedImg0;
+        }
+        &1 {
+          @include SharedImg0;
+
+        }
+      }
+      &Item {
+        &0 {
+          width: 100%;
+          height: 100%;
+          padding:0 $spacing2 0 0;
+        }
+        &1 {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-flow:row wrap ;
+          > div{
+            flex: 0 0 50%;
+            height: 50%;
+            padding:calc(2/16 * 1rem);
+          }
+        }
+      }
+    }
+    &2{
+      &Strike {
+        &0 {
+          height: calc(1/16 * 1rem);
+          background-color: $grey;
+        }
+      }
+      &Text {
+        &0 {
+          @include SharedText0;
+        }
+        &1 {
+          font-size: $caption;
+          color: lighten($black,70);
+          font-weight: lighter;
+          font-family: 'Gilroy-Bold';
+        }
+      }
+
+      &Item {
+        &0 {
+
+        }
+        &1{
+          display: flex;
+          flex-flow: row wrap;
+        }
+
+        &3{
+          flex: 0 0 50%;
+          display: flex;
+          padding:$spacing5 $spacing5 $spacing5 0;
+          align-items: center;
+        }
+
+        &4{
+          padding:$spacing1;
+          border-radius: 100%;
+          margin: 0 $spacing2 0 0;
+        }
+        &5{
+          > *{
+            margin:$spacing5 0 0 0;
+          }
+        }
+
+        &6{
+          display: flex;
+          margin:0 0 $spacing3 0;
+          p{
+            margin: 0 0 0 $spacing2;
+          }
+        }
+
+
+      }
+
+    }
+
+    &3 {
+      &Item {
+        &0 {
+          display: flex;
+          flex-flow: row;
+          margin: $spacing5 0 0   0;
+          overflow: auto hidden;
+        }
+        &1{
+          border-radius: calc(20/16 * 1rem);
+          padding:$spacing3;
+          margin: 0 $spacing3 0 0;
+          flex: 0 0 calc(200/16 * 1rem);
+          &:nth-child(4n+1){
+            background-color: lighten($pov-skyblue,40);
+          }
+          &:nth-child(4n+2){
+            background-color: $pov-minty;
+          }
+          &:nth-child(4n+3){
+            background-color: $pov-orange;
+          }
+          &:nth-child(4n+4){
+            background-color: $pov-peach;
+          }
+        }
+      }
+      &Text {
+        &0 {
+          margin:$spacing5 0 0 0;
+          @include SharedText0;
+        }
+      }
+
+    }
+
+    &4{
+      padding: 0 $spacing7;
+      &Text {
+        &0 {
+          display: flex;
+          align-items: center;
+
+          > * {
+            margin: 0 $spacing2 0 0;
+          }
+        }
+        &1{
+          color:darken($grey,40);
+          flex:1 0 100%;
+          text-align: center;
+        }
+
+      }
+      &Item {
+        &0 {
+          display: flex;
+          padding: $spacing5;
+          border-radius: calc(40/16 * 1rem);
+          border:calc(1/16 * 1rem) solid $grey;
+          flex-flow: row wrap;
+          justify-content: center;
+          > *{
+            max-width: calc(450/16 * 1rem);
+            flex: 1 0 100%;
+          }
+        }
+        &1{
+          flex:0 0 80%;
+        }
+        &2{
+          flex:0 0 20%;
+          display: flex;
+          justify-content: flex-end;
+        }
+        &3{
+          display: flex;
+          flex-direction: column;
+          margin:0 0 $spacing3 0;
+          > *{
+            margin :$spacing3 0 0 0;
+          }
+        }
+        &4{
+          display: flex;
+        }
+
+      }
+    }
+
+  }
+}

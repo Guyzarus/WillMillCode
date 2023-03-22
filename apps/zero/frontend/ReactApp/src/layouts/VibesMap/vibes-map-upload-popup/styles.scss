@@ -1,0 +1,118 @@
+@import "../../../assets/styles/media_queries";
+@import "../../../assets/styles/spacing";
+@import "../../../assets/styles/color_pallete";
+
+.popup-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 80%;
+  width: 45%;
+  border-radius: 16px;
+}
+
+.image-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 372px;
+  height: 370px;
+  border: 1px solid #e6e8ec;
+  border-radius: 24px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  .uploaded-image {
+    width: 372px;
+    height: 370px;
+    border-radius: 24px;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .subHeader {
+    font-size: 16px;
+    color: $dark-grey;
+  }
+}
+
+.upload-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 2px solid #e6e8ec;
+  border-radius: 32px;
+  span {
+    font-size: 14px;
+    color: $dark-grey;
+  }
+  button {
+    color: $white;
+    background-color: $pov-skyblue;
+    height: 35px;
+    font-size: 16px;
+    width: 101px;
+    border-radius: 90px;
+    font-weight: bold;
+    padding: 16px, 24px, 16px, 24px;
+  }
+}
+
+.bereal-photo {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  button {
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+    color: $dark-grey;
+    margin-right: 20px;
+  }
+  .upload-button {
+    color: $white;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $pov-skyblue;
+    font-size: 16px;
+    width: 128px;
+    border-radius: 90px;
+
+    font-weight: bold;
+    align-items: center;
+  }
+  .capture-button {
+    color: $pov-liteblue;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $pov-skyblue;
+    background-color: $white;
+    border: 1px solid $pov-skyblue;
+    font-size: 16px;
+    width: 128px;
+    border-radius: 90px;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    align-items: center;
+  }
+  .capture-button:hover {
+    color: $white;
+    background-color: $pov-skyblue;
+  }
+  .upload-button:disabled {
+    cursor: not-allowed;
+    background: $pov-liteblue;
+  }
+}

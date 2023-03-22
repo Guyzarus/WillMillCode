@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "[PLACE-PROJECT-NAME-HERE]"
+  },
+  "targets": {
+    "[PLACE-PROJECT-NAME-HERE]": {
+      "database": {
+        "default": [
+          "[PLACE-PROJECT-NAME-HERE]"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+
+$spacing1: calc(8/16* 1rem);
+$spacing2: calc(12/16* 1rem);
+$spacing3: calc(16/16* 1rem);
+$spacing4: calc(24/16* 1rem);
+$spacing5: calc(32/16* 1rem);
+$spacing6: calc(48/16* 1rem);
+$spacing7: calc(56/16* 1rem);
+$spacing8: calc(64/16* 1rem);
+$spacing9: calc(80/16* 1rem);
+$spacing10: calc(96/16* 1rem);
+
+
+:root{
+  --spacing1:#{$spacing1};
+  --spacing2:#{$spacing2};
+  --spacing3:#{$spacing3};
+  --spacing4:#{$spacing4};
+  --spacing5:#{$spacing5};
+  --spacing6:#{$spacing6};
+  --spacing7:#{$spacing7};
+  --spacing8:#{$spacing8};
+  --spacing9:#{$spacing9};
+  --spacing10:#{$spacing10};
+}

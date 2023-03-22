@@ -1,0 +1,15 @@
+@import "../../../assets/styles/media_queries";
+@import "../../../assets/styles/spacing";
+@import "../../../assets/styles/common";
+
+@media #{$mobile} {
+  .Register {
+    .column.left {
+      display: none;
+    }
+
+    .column.right{
+      width: 100%;
+    }
+  }
+}

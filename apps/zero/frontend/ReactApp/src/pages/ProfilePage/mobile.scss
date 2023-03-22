@@ -1,0 +1,33 @@
+@import "../../assets/styles/media_queries";
+@import "../../assets/styles/spacing";
+@import "../../assets/styles/common";
+
+
+@media #{$mobile}{
+  .ProfilePage{
+    .ProfilePagePod0Item0{
+      width: 80%;
+      position: relative;
+    }
+    .ProfilePagePod0{
+      height: auto;
+      @include FlexColumnCenter
+    }
+
+    .ProfilePageMainPod{
+      overflow: auto;
+    }
+
+    .ProfilePagePod0Item0{
+      inset:0;
+      margin:$spacing5 0 0 0;
+    }
+
+    .ProfilePagePod1{
+      width: 100%;
+    }
+    .UserEventNFTsPod0Item1{
+      flex:1 0 100%
+    }
+  }
+}

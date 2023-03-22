@@ -1,0 +1,76 @@
+@import "../../../assets/styles/common";
+@import "../../../assets/styles/fonts/";
+@import "../../../assets/styles/global";
+
+
+  .VibesMapList{
+    overflow: hidden auto;
+    max-height: 100%;
+    @include GlobalScroll0;
+    &Main {
+      &Pod {
+        margin: 0 0 $spacing5 0;
+        display: flex;
+        flex-flow: row wrap;
+      }
+      &Text {
+        &0 {
+          font-size: $body-bold;
+        }
+
+      }
+      &Icon {
+        &0 {
+          margin: 0 $spacing2 0 0;
+        }
+        &1 {
+          color:darken( $grey,40);
+        }
+      }
+      &Item {
+        &0 {
+          display: flex;
+          margin:  0 0 $spacing2 0;
+          max-height:calc(200/16 * 1rem);
+          min-width: 25vw;
+          flex: 1 0 50%;
+
+        }
+        &1 {
+          flex: 0 0 60%;
+          border: calc(1/16 * 1rem) solid $grey;
+          border-radius: 0 calc(8/16 * 1rem)   calc(8/16 * 1rem) 0;
+          padding:$spacing4;
+          overflow: hidden scroll;
+
+          &::-webkit-scrollbar-thumb {
+            background-color: transparent !important;
+          }
+        }
+        &2{
+          p{
+            display: inline;
+          }
+        }
+        &3{
+          display: flex;
+          margin:0 0 $spacing2 0;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+      &Img {
+        &0 {
+          width: 40%;
+          border-radius: calc(8/16 * 1rem) 0  0 calc(8/16 * 1rem) ;
+        }
+      }
+    }
+
+    &Pod {
+      &0 {
+
+      }
+    }
+  }
+

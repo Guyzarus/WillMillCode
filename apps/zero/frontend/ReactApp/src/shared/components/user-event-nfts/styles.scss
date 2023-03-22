@@ -1,0 +1,43 @@
+@import "../../../assets/styles/common";
+
+.UserEventNFTs{
+    &Main {
+      &Pod {
+        @include borderRadius0;
+        height: 100%;
+
+
+      }
+    }
+    &Pod {
+      &0 {
+        max-width: 100%;
+        height: 100%;
+        &Text {
+          &0 {
+            font-weight: bold;
+            font-size: $display-small;
+          }
+        }
+
+        &Item {
+          &0 {
+            display: flex;
+            flex-flow: row wrap;
+            overflow:auto;
+            max-height: 50vh;
+          }
+          &1{
+            flex: 0 0 50%;
+            min-width: 50%;
+            padding:$spacing3;
+          }
+        }
+
+
+      }
+    }
+  }
+
+
+

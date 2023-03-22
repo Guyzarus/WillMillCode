@@ -1,0 +1,57 @@
+@import "../../assets/styles/common";
+
+.ManageEvents{
+  height: 100%;
+
+  h2{
+    font-size: $display;
+    margin:$spacing3 0 0 0;
+  }
+  &Main {
+    &Pod {
+      @include borderRadius0;
+      height: 100%;
+      padding:$spacing3;
+
+    }
+  }
+  &Pod {
+    &0 {
+      max-width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &1{
+      &Item {
+        &0 {
+          display: flex;
+          margin:$spacing3 0 0 0;
+          width: 100%;
+          flex-flow: row wrap;
+          > *{
+            flex:1 0 auto;
+          }
+        }
+      }
+    }
+    &2{
+      &Item {
+        &1 {
+          width: 50%;
+          height: 50%;
+          background-color: $white;
+          @include borderRadius0;
+          padding:$spacing4;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+        }
+      }
+    }
+  }
+}
+
+
+

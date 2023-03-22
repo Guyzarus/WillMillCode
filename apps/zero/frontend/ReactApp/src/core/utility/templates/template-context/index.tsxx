@@ -1,0 +1,31 @@
+// react
+import React,{ useState,createContext, useContext, useEffect, useMemo} from "react";
+
+
+
+
+
+// @ts-ignore
+const TemplateContext = createContext<{}>();
+
+
+export let  useTemplate =()=> {
+    return useContext(TemplateContext);
+}
+
+
+export function TemplateProvider({children}) {
+
+  const value ={}
+
+
+  return (
+      <TemplateContext.Provider value={value}>
+        {children}
+      </TemplateContext.Provider>
+  )
+
+
+
+}
+

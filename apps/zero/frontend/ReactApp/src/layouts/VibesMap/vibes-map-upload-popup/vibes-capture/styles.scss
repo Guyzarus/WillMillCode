@@ -1,0 +1,14 @@
+@import "../../../../assets/styles/media_queries";
+@import "../../../../assets/styles/spacing";
+
+
+
+.containerWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    // max-width: 1280px;
+  }

@@ -1,0 +1,207 @@
+@import "../../../assets/styles/media_queries";
+@import "../../../assets/styles/spacing";
+@import "../../../assets/styles/color_pallete";
+
+.upload-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  justify-content: center;
+  width: 100%;
+  .header-section {
+    margin: 20px 0;
+    .header {
+      font-family: "Shrikhand";
+      font-size: 40px;
+    }
+  }
+  .image {
+    img {
+      width: 300px;
+      height: 300px;
+      border-radius: 16px;
+    }
+  }
+  .input-fields {
+    width: 45%;
+  }
+  .inputWrapper {
+    width: 100%;
+    margin: 30px 0;
+    margin-bottom: 0.5em;
+    border: 1px solid $grey;
+    border-radius: 1.5em;
+    padding: 1em;
+    .attr-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .attr-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button {
+        transition: all 300ms;
+        color: $pov-skyblue;
+        font-size: 1rem;
+      }
+      button:hover {
+        color: $pov-liteblue;
+      }
+    }
+  }
+  .inputWrapper label {
+    display: flex;
+    margin-bottom: 0.75em;
+    font-weight: 500;
+    span {
+      color: red;
+    }
+  }
+
+  .inputWrapper label div {
+    margin-left: 0.5em;
+  }
+
+  .input {
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    resize: none;
+    background: #f4f5f6;
+    border-radius: 0.5em;
+    border: 1px solid $pov-dietpurple;
+    color: $dark-grey;
+    font-size: 1rem;
+  }
+  .inputWrapper textarea:focus,
+  .inputWrapper input:focus,
+  .inputWrapper select:focus {
+    outline: 1px solid $grey;
+  }
+}
+
+.attributes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+.upload-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button:first-child {
+    color: $white;
+    background-color: $pov-skyblue;
+    height: 35px;
+    margin: 30px;
+    font-size: 16px;
+    width: 101px;
+    border-radius: 90px;
+    font-weight: bold;
+    padding: 16px, 24px, 16px, 24px;
+  }
+  button:first-child:disabled {
+    cursor: not-allowed;
+    background-color: $pov-liteblue;
+    color: $grey;
+  }
+  button:last-child {
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+    color: $dark-grey;
+    margin-right: 20px;
+  }
+}
+
+.upload-modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .header {
+    margin-bottom: 30px;
+    h1 {
+      font-family: "Shrikhand";
+      font-size: 32px;
+    }
+    span {
+      color: $dark-grey;
+    }
+  }
+  .image-section {
+    img {
+      height: 300px;
+      width: 300px;
+      border-radius: 16px;
+    }
+  }
+  .upload-submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      height: 35px;
+      margin: 20px;
+      font-size: 16px;
+      width: 150px;
+      border-radius: 90px;
+      font-weight: bold;
+      padding: 16px, 24px, 16px, 24px;
+    }
+    button:first-child,
+    button:last-child:hover {
+      color: $white;
+      background-color: $pov-skyblue;
+    }
+    button:last-child,
+    button:first-child:hover {
+      color: $pov-skyblue;
+      background-color: $white;
+      border: 1px solid $pov-skyblue;
+    }
+    button:last-child:disabled {
+      cursor: not-allowed;
+      color: $pov-liteblue;
+      background-color: $white;
+      border-color: $pov-liteblue;
+    }
+  }
+}
+.upload-button {
+  margin: 20px 0;
+}
+.copy-button:hover {
+  color: $pov-skyblue;
+  background-color: $white;
+  border: 1px solid $pov-skyblue;
+}
+.near-details {
+  align-items: baseline;
+  padding-top: 20px;
+  span {
+    color: rgb(20, 17, 17);
+    padding-left: 10px;
+  }
+  .connect:hover {
+    color: $pov-skyblue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+.near-connect {
+  display: flex;
+  padding-top: 10px;
+  border-top: 1px solid $grey;
+  flex-direction: row;
+  align-items: center;
+  .account {
+    color: $pov-skyblue;
+  }
+}

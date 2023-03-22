@@ -1,0 +1,33 @@
+@import "../../../assets/styles/spacing";
+
+
+#VibesMapBody{
+  height: 100%;
+  overflow: hidden;
+
+
+  .VibesMapBody{
+    &Main {
+      &Pod {
+        display: flex;
+        height: 100%;
+        overflow: hidden;
+
+      }
+    }
+
+    &Pod {
+      &0 {
+        flex: 1 0 60%;
+        height: 100%;
+      }
+      &1 {
+        flex: 1 0 40%;
+        padding:0 0 0 $spacing2;
+        height: 100%;
+        overflow: hidden auto;
+
+      }
+    }
+  }
+}

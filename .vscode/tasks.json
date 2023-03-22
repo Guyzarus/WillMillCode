@@ -1,0 +1,333 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "pushing work to git remote",
+      "type": "shell",
+      "command": "git add .;git commit -m'[${input:pushing_work_to_git_remote0}] ${input:pushing_work_to_git_remote1}';git branch --unset-upstream;git push origin HEAD",
+      "group": "none",
+      "linux": {
+        "command": "git add .;git commit -m\"[${input:pushing_work_to_git_remote0}] ${input:pushing_work_to_git_remote1}\";git branch --unset-upstream;git push origin HEAD"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        // "close": true
+      }
+    },
+    {
+      "label": "Create branch after merged changes",
+      "type": "shell",
+      "command": " git checkout ${input:create_branch_after_merged_changes0};git pull origin ${input:create_branch_after_merged_changes0};git branch --delete ${input:create_branch_after_merged_changes1};git checkout -b ${input:create_branch_after_merged_changes2}",
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "close": true
+      }
+    },
+    {
+      "label": "Removing a file from being tracked by git",
+      "type": "shell",
+      "command": "git rm --cached  --sparse ${input:Removing_a_file_from_being_tracked_by_git0}",
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "close": true
+      }
+    },
+    {
+      "label": "merge changes from current dev branch",
+      "type": "shell",
+      "command": " git checkout ${input:merge_changes_from_current_dev_branch0};git pull origin ${input:merge_changes_from_current_dev_branch0};git checkout -;git merge ${input:merge_changes_from_current_dev_branch0}",
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        // "close": true
+      }
+    },
+    {
+      "label": "Merge Changes From Master",
+      "type": "shell",
+      "command": " git checkout master;git pull origin master;git branch --delete michael-fantastic;git checkout -b michael-fantastic",
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+    },
+    {
+      "label": "Run: angular frontend",
+      "type": "shell",
+      "command": "cd .\\apps\\zero\\frontend\\AngularAppCurrent\\; npx ng serve --ssl=true --ssl-key=$env:WML_CERT_KEY0 --ssl-cert=$env:WML_CERT0",
+      "windows": {
+        "command": "cd .\\apps\\zero\\frontend\\AngularAppCurrent\\; npx ng serve --ssl=true --ssl-key=$env:WML_CERT_KEY0 --ssl-cert=$env:WML_CERT0"
+      },
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      // "runOptions": {
+      //   "runOn": "folderOpen"
+      // }
+    },
+    {
+      "label": "Run: Start Docker MSSQL Container",
+      "type": "shell",
+      "command": "docker start confident_poincare",
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      // "runOptions": {
+      //   "runOn": "folderOpen"
+      // }
+    },
+    {
+      "label": "Reinstall Angular Package",
+      "type": "shell",
+      "command": "cd .\\apps\\zero\\frontend\\AngularAppCurrent\\; npm uninstall ${input:update_an_Angular_package0};npm install ${input:update_an_Angular_package1} ${input:update_an_Angular_package0};",
+
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Generate_Angular_Component",
+      "type": "shell",
+      "command": "cd .\\apps\\zero\\frontend\\AngularAppCurrent\\;npx ng g @windmillcode/angular-templates:component --name ${input:Generate_Angular_Component0}  --standalone ${input:Generate_Angular_Component1}  --cpnt-type ${input:Generate_Angular_Component2} --style-type ${input:Generate_Angular_Component3};",
+
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Test: Angular Frontend",
+      "type": "shell",
+      "command": "cd .\\apps\\zero\\frontend\\AngularAppCurrent\\; npx ng test --watch --code-coverage",
+      "windows": {
+        "command": "cd .\\apps\\zero\\frontend\\AngularAppCurrent\\; npx ng test --watch --code-coverage"
+      },
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+
+    },
+    {
+      "label": "Check for angular updates",
+      "type": "shell",
+      "command": "cd .\\apps\\zero\\frontend\\AngularAppCurrent\\; npx ng update",
+
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "promptOnClose": false,
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    },
+
+    {
+      "label": "Run: flask backend",
+      "type": "shell",
+      "command": ".\\ignore\\${input:current_user_0}\\run_backend_dev.ps1 ${input:current_user_0}",
+      "windows": {
+        "command": ".\\ignore\\${input:current_user_0}\\run_backend_dev.ps1 ${input:current_user_0}"
+      },
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      // "runOptions": {
+      //   "runOn": "folderOpen"
+      // }
+    },
+    {
+      "label": "Test: flask backend",
+      "type": "shell",
+      "command": ".\\ignore\\${input:current_user_0}\\run_backend_test.ps1 ${input:current_user_0}",
+      "windows": {
+        "command": ".\\ignore\\${input:current_user_0}\\run_backend_test.ps1 ${input:current_user_0}"
+      },
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Git management",
+      "type": "shell",
+      "command": "git status",
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      // "runOptions": {
+      //   "runOn": "folderOpen"
+      // }
+    },
+    {
+      "label": "run: testng e2e",
+      "type": "shell",
+      "command": ".\\ignore\\${input:current_user_0}\\run_e2e_test.ps1",
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        // "close": true
+      },
+    },
+    {
+      "label": "e2e-testng: setup vscode java testing extension",
+      "type": "shell",
+      "command": ".\\ignore\\${input:current_user_0}\\setup_vscode_extension_testng.ps1",
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        // "close": true
+      },
+    },
+    {
+      "label": "e2e-testng: Create_TestNG_Page",
+      "type": "shell",
+      "command": ".\\ignore\\${input:current_user_0}\\testng_create_page.ps1 ${input:Create_TestNG_Page0};",
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        // "close": true
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "current_user_0",
+      "description": "the user to run their env scripts",
+      "default": "Windmillcode",
+      "type": "pickString",
+      "options": [
+        "Windmillcode",
+      ]
+    },
+    {
+      "id": "create_branch_after_merged_changes0",
+      "description": "the branch to pull from",
+      "default": "dev",
+      "type": "promptString"
+    },
+    {
+      "id": "create_branch_after_merged_changes1",
+      "description": "the local branch to delete",
+      "default": "michael-fantastic",
+      "type": "promptString"
+    },
+    {
+      "id": "create_branch_after_merged_changes2",
+      "description": "the local branch to make",
+      "default": "michael-fantastic",
+      "type": "promptString"
+    },
+    {
+      "id": "merge_changes_from_current_dev_branch0",
+      "description": "the branch to pull from",
+      "default": "dev",
+      "type": "promptString"
+    },
+    {
+      "id": "Removing_a_file_from_being_tracked_by_git0",
+      "description": "",
+      "type": "promptString"
+    },
+    {
+      "id": "pushing_work_to_git_remote0",
+      "description": "pushing_work_to_git_remote",
+      "default": "UPDATE",
+      "type": "pickString",
+      "options": ["UPDATE", "FIX", "PATCH", "BUG", "MERGE", "COMPLEX MERGE"]
+    },
+    {
+      "id": "pushing_work_to_git_remote1",
+      "description": "git commit desc",
+      "default": "additional work",
+      "type": "promptString"
+    },
+    {
+      "id": "package_your_projects0",
+      "description": "provide the package name",
+      "default": "wml-slicebox",
+      "type": "promptString"
+    },
+    {
+      "id": "package_your_projects1",
+      "description": "npm version update option",
+      "default": "patch",
+      "type": "pickString",
+      "options": ["major", "minor","patch"]
+    },
+    {
+      "id": "push_python_docker_backend_prod_img0",
+      "description": "provide img tag(version) for your docker img to be pushed",
+      "type": "promptString"
+    },
+    {
+      "id": "Build_python_docker_backend_prod_img0",
+      "description": "provide img tag(version) for your docker img",
+      "type": "promptString"
+    },
+    {
+      "id": "update_an_Angular_package0",
+      "description": "provide an npm package to reninstall",
+      "default": "@windmillcode/angular-templates",
+      "type": "promptString"
+    },
+    {
+      "id": "update_an_Angular_package1",
+      "description": "dev install or dev dependency install",
+      "default": "-D",
+      "type": "pickString",
+      "options": ["-s", "-D"]
+    },
+    {
+      "id": "Generate_Angular_Component0",
+      "description": "the name of the component",
+      "type": "promptString",
+    },
+    {
+      "id": "Generate_Angular_Component1",
+      "description": "component is standalone?",
+      "default": "false",
+      "type": "pickString",
+      "options": ["true", "false"]
+    },
+    {
+      "id": "Generate_Angular_Component2",
+      "description": "type of component",
+      "default": "default",
+      "type": "pickString",
+      "options": ["default", "library"]
+    },
+    {
+      "id": "Generate_Angular_Component3",
+      "description": "preset scss to choose from.",
+      "default": "type0",
+      "type": "pickString",
+      "options": ["type0","type1", "none"]
+    },
+  ]
+}

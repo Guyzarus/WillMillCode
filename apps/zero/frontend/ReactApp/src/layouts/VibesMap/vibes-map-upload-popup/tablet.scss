@@ -1,0 +1,48 @@
+@import "../../../assets/styles/media_queries";
+@import "../../../assets/styles/spacing";
+
+@media #{$tabletForHeader} {
+  .popup-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    // height: 55%;
+    // width: 65%;
+    border-radius: 16px;
+    // width: 85%,
+    // min-width: 320px,
+  }
+  .image-preview {
+    width: 300px;
+    height: 250px;
+    .uploaded-image {
+      width: 300px;
+      height: 250px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  .upload-button {
+    span {
+      font-size: 12px;
+    }
+    button {
+      font-size: 14px;
+      width: 80px;
+    }
+  }
+  .bereal-photo {
+    margin-top: 20px;
+    margin-left: 20px;
+    button:first-child,
+    .capture-button,
+    button:last-child {
+      height: 30px;
+      width: 80px;
+      font-size: 14px;
+      margin-right: 20px;
+    }
+  }
+}

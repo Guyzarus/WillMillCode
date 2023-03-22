@@ -1,0 +1,26 @@
+$black: #000000;
+$white: #ffffff;
+$pov-liteblue: #6eaefc;
+// $pov-skyblue: #00a3ff;
+$pov-skyblue: red;
+$pov-peach: #fca377;
+$pov-orange: #f08d13;
+$pov-error: #ff3236;
+$pov-minty: #eefed2;
+$pov-dietpurple: #eed6fb;
+$grey: lighten(grey, 40);
+$dark-grey: #777e90;
+
+:root {
+  --black: #{$black};
+  --white: #{$white};
+  --pov-liteblue: #{$pov-liteblue};
+  --pov-skyblue: #{$pov-skyblue};
+  --pov-peach: #{$pov-peach};
+  --pov-orange: #{$pov-orange};
+  --pov-minty: #{$pov-minty};
+  --pov-dietpurple: #{$pov-dietpurple};
+  --grey: #{$grey};
+  --dark-grey: #{$dark-grey};
+  --pov-error: #($pov-error);
+}

@@ -1,0 +1,22 @@
+@import "../../../assets/styles/common";
+
+.VibesMapBody{
+    &Main {
+      &Pod {
+        @include borderRadius0;
+        height: 100%;
+
+      }
+    }
+    &Pod {
+      &0 {
+        max-width: 100%;
+        height: 100%;
+
+
+      }
+    }
+  }
+
+
+

@@ -1,0 +1,170 @@
+@import "../../../assets/styles/common";
+
+.ProfileSettings {
+  &Pod {
+    &0 {
+    }
+
+    &1 {
+      &Item {
+        &0 {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .column {
+    float: left;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+  }
+
+  .left {
+    width: 30%;
+    justify-content: center;
+    display: flex;
+  }
+
+  .right {
+    width: 70%;
+    background-color: white;
+  }
+
+  .leftBorder {
+    margin-top: 10%;
+    padding: 5%;
+    width: 50%;
+    height: fit-content;
+    border-radius: 10px;
+    border: 3px solid #e6e8ec;
+    justify-content: center;
+  }
+
+  .rightBorder {
+    max-width: 100%;
+    margin-top: 3%;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    padding: 0 $spacing6 $spacing6 0;
+  }
+
+  .wallet {
+    margin-top: 20%;
+  }
+
+  .dataWrapper {
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: space-between;
+    > *{
+      flex: 0 1 45%;
+    }
+  }
+
+  .dataBox {
+    // margin-right: 50px;
+  }
+
+  .dataWrapperSettings {
+    flex-flow: row nowrap;
+    display: flex;
+    align-items: center;
+    padding: 9%;
+  }
+
+  .dataWrapperUpdates {
+    flex-flow: row nowrap;
+    display: flex;
+    align-items: left;
+  }
+
+  .navigation {
+    text-align: left;
+    font-weight: 500;
+  }
+
+  .icons {
+    height: 10%;
+    width: 10%;
+    margin-right: 10%;
+  }
+
+  .strike {
+    background-color: $grey;
+    height: calc(1 / 16 * 1rem);
+    margin-top: 4%;
+    margin-bottom: 4%;
+    width: 80%;
+  }
+
+  .updateButton {
+    background-color: $pov-skyblue;
+    color: white;
+    width: 150px;
+    max-width: 100%;
+    height: 50px;
+    max-height: 100%;
+    font-weight: 500;
+    margin-right: 3%;
+    box-shadow: 1px 1px 1px #a7a7a7;
+    border-radius: 25px;
+  }
+
+  button {
+    text-align: center;
+  }
+
+  input {
+
+    padding: $spacing1;
+    font-weight: semibold;
+    font-size: medium;
+    width: 100%;
+    margin-bottom: 2%;
+    border: 3px solid #e6e8ec;
+    border-radius: 25px;
+  }
+
+  textarea {
+    padding: $spacing3;
+    font-weight: semibold;
+    font-size: medium;
+    width: 900px;
+    max-width: 85%;
+    height: 150px;
+    max-height: 100%;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    border: 3px solid #e6e8ec;
+    border-radius: 10px;
+    resize: none;
+  }
+
+  h2 {
+    text-align: left;
+    font-size: xx-large;
+    font-weight: 700;
+    margin-bottom: 3%;
+  }
+
+  h3 {
+    text-align: left;
+    font-size: medium;
+    font-weight: 600;
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+
+  h4 {
+    text-align: left;
+    font-size: small;
+    font-weight: 500;
+    color: #b1b5c3;
+    margin-bottom: 1%;
+  }
+}

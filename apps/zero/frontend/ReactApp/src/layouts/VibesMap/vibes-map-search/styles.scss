@@ -1,0 +1,105 @@
+@import "../../../assets/styles/spacing";
+@import "../../../assets/styles/fonts";
+@import "../../../assets/styles/color_pallete";
+
+
+
+
+.VibesMapSearch{
+  @mixin SharedItem0{
+    display: flex;
+    align-items: center;
+
+  }
+  @mixin SharedBtn0{
+    margin:0 $spacing5 0 0;
+    border-radius: calc(7/16 * 1rem);
+    padding:$spacing2 $spacing5;
+  }
+  &Main {
+    &Pod {
+
+    }
+  }
+
+  &Pod {
+    &0 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &Icon {
+        &0 {
+          font-size: $display-x-small;
+          margin: 0 $spacing3 0 0;
+          color:darken($grey,30);
+        }
+        &1{
+          font-size: $display-x-small;
+          margin: 0 $spacing3 0 0;
+          color:darken($grey,30);
+        }
+
+      }
+      &Input {
+        &0 {
+          flex: 1 0 auto;
+        }
+      }
+      &Btn {
+        &0{
+          display: none;
+        }
+        &1 {
+          border-radius: calc(60/16 * 1rem);
+          padding-left: $spacing5;
+          padding-right: $spacing5;
+        }
+        &2{
+          border-radius: calc(60/16 * 1rem);
+          background-color: $grey;
+          padding:$spacing3;
+        }
+      }
+      &Item {
+        &0 {
+          @include SharedItem0;
+          align-self: flex-start;
+          flex: 0 0 40%;
+        }
+        &1 {
+          @include SharedItem0;
+          justify-content: flex-end;
+          flex-flow:row wrap;
+          flex: 1 0 60%;
+          > *{
+            margin: 0 $spacing3 $spacing3 0;
+          }
+        }
+        &2 {
+          flex: 0 0 50%;
+        }
+        &3{
+          display: none;
+        }
+
+      }
+    }
+    &1{
+      padding: $spacing3;
+      display: flex;
+      flex-flow: row wrap;
+      &Btn {
+        &0 {
+          @include SharedBtn0;
+          label{
+            mix-blend-mode: color
+          }
+
+        }
+
+      }
+    }
+  }
+}
+
+

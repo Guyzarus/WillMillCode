@@ -1,0 +1,27 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "emulators": {
+    "database": {
+      "port": 10000,
+      "host":"0.0.0.0",
+      "rules": "database.rules.json"
+    },
+    "singleProjectMode": true
+  }
+}

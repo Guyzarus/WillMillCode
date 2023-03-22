@@ -1,0 +1,80 @@
+@import "../../../assets/styles/media_queries";
+@import "../../../assets/styles/spacing";
+
+@media #{$mobile}{
+  #VibesMapLayout{
+    .VibesMapLayoutPod0,
+    .VibesMapMainPod1Item0,
+    .VibesMapMainPod1Strike0{
+      display: none;
+    }
+    .VibesMapSearchPod0Item0{
+      margin: 0 0 $spacing3 0;
+      width: 100%;
+    }
+    .VibesMapLayoutPod1{
+      max-width: 100%;
+    }
+
+    .VibesMapSearchPod0{
+      flex-direction: column;
+    }
+
+    .VibesMapSearchPod1{
+      flex-flow:row nowrap;
+      overflow: auto;
+      &::-webkit-scrollbar-thumb{
+        display: none;
+      }
+    }
+
+    .VibesMapSearchMainPod{
+      max-width: 100%;
+      overflow:hidden;
+    }
+
+    .VibesMapSearchPod0Item2{
+      flex:0 0 100%
+    }
+    .VibesMapSearchPod0Item1{
+      width: 100%;
+      justify-content: flex-start;
+    }
+
+    .VibesMapListMainItem0{
+      flex: 0 0 100% !important;
+    }
+
+    .EventDetailMainMainItem0{
+      flex-direction: column;
+    }
+
+    .EventDetailMainMainItem1{
+      margin: 0 0 $spacing3 0;
+    }
+
+    .EventDetailMainPod4{
+      padding:0
+    }
+
+    .EventDetailMainPod2Item3 {
+      min-width: calc(200/16 * 1rem);
+    }
+
+    .EventDetailMainMainItem2{
+      flex: 0 0 auto;
+    }
+
+    .VibesMapLayoutPod1Item0{
+      height: 90%;
+    }
+    .VibesMapLayoutPod1Item1{
+      display: block;
+      flex: 0 0 5%;
+    }
+
+
+
+
+  }
+}

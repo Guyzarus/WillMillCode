@@ -1,0 +1,32 @@
+@import "../../../assets/styles/media_queries";
+
+@media #{$tablet}{
+  #VibesMapLayout{
+    .VibesMapLayoutPod0Item0{
+      display: block;
+      width: auto;
+    }
+    .VibesMapLayoutPod0{
+      flex: 0 0 10%;
+    }
+    .VibesMapLayoutPod0Btn0{
+      margin:auto;
+      i {
+        margin:0
+      }
+      label{
+        display: none;
+      }
+    }
+    .VibesMapLayoutPod0Img1{
+      margin:0;
+    }
+
+    .VibesMapLayoutPod0Item1 > *:not(.VibesMapLayoutPod0Img1){
+      display: none;
+    }
+    .VibesMapLayoutPod0Item4{
+      margin:0
+    }
+  }
+}

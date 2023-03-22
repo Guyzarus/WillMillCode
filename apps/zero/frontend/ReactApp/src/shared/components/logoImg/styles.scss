@@ -1,0 +1,27 @@
+@import "../../../assets/styles/common";
+
+.LogoImg{
+    &Main {
+      &Pod {
+        @include borderRadius0;
+        height: 100%;
+
+      }
+    }
+    &Pod {
+      &0 {
+        max-width: 100%;
+        height: 100%;
+        &Img {
+          &0 {
+            width: calc(80/16 * 1rem);
+            height: auto;
+          }
+        }
+
+      }
+    }
+  }
+
+
+

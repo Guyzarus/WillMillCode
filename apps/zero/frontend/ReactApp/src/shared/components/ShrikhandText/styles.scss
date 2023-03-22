@@ -1,0 +1,30 @@
+@import "../../../assets/styles/common";
+
+
+.Shrikhand{
+    height: 100%;
+    &Main {
+      &Pod {
+        @include borderRadius0;
+        height: 100%;
+
+      }
+
+      &Text {
+        &0 {
+          font-family: 'Shrikhand';
+        }
+      }
+
+    }
+    &Pod {
+      &0 {
+
+
+
+      }
+    }
+  }
+
+
+

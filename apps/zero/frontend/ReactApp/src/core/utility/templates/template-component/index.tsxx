@@ -1,0 +1,22 @@
+import React,{ useState,useEffect } from "react";
+
+// styles
+import "./styles.scss";
+
+// utils
+import { generateClassPrefix } from "src/core/utility/common-utils";
+import { useTranslation } from "react-i18next";
+
+export default function VibesMapBody() {
+  const myClass= "VibesMapBody"
+  const classPrefix = generateClassPrefix(myClass);
+  const {t,i18n}=useTranslation("common");
+
+  return (
+    <div className={myClass}>
+      <div className={classPrefix("MainPod")}>
+        <div className={classPrefix("Pod0")}></div>
+      </div>
+    </div>
+  );
+}

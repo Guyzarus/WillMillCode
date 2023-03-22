@@ -1,0 +1,29 @@
+@import "../../../assets/styles/common";
+
+.PrimaryBtn{
+    height: 100%;
+    &Main {
+      &Pod {
+        @include borderRadius0;
+        height: 100%;
+
+      }
+      &Btn {
+        &0 {
+          border-radius: calc(50/16 * 1rem);
+
+        }
+      }
+    }
+    &Pod {
+      &0 {
+        max-width: 100%;
+        height: 100%;
+
+
+      }
+    }
+  }
+
+
+

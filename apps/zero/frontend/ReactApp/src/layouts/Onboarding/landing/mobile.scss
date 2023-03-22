@@ -1,0 +1,36 @@
+@import "../../../assets/styles/media_queries";
+@import "../../../assets/styles/spacing";
+@import "../../../assets/styles/common";
+
+
+@media #{$mobile}{
+  .Landing{
+
+    nav{
+      justify-content: center;
+    }
+    .LandingPod0Img0{
+      position: relative;
+      width: 100%;
+      margin: auto;
+    }
+    .LandingPod0{
+      height: auto;
+      @include FlexColumnCenter;
+      padding:0;
+    }
+    .LandingPod0Item0{
+      padding: 0 $spacing3;
+      flex:1 1 auto;
+      max-width: 100%;
+    }
+    .LandingPod0Text0{
+      font-size: $display;
+      text-align: center;
+    }
+    .LandingPod0Item1{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,217 @@
+@import "../../../assets/styles/color_pallete";
+@import "../../../assets/styles/layouts";
+
+.MintStatusPopup {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.75);
+  z-index: 99;
+  .near-status-container {
+    width: 100vw !important;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.75);
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    z-index: 20;
+  }
+
+  .near-status-container.active {
+    display: flex;
+  }
+
+  .popupContainer {
+    width: 100%;
+    max-width: 32em;
+    margin: auto;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 4em 1em;
+    border-radius: 1em;
+    position: relative;
+    animation: show 300ms alternate;
+  }
+
+  @keyframes show {
+    from {
+      transform: scale(0.95) translateY(-1em);
+    }
+
+    to {
+      transform: scale(1) translateY(0);
+    }
+  }
+
+  .imgContainer {
+    padding: 2em;
+    border-radius: 0.7em;
+    box-shadow: -26px 49px 31px -24px rgba(93, 134, 194, 0.12),
+      26px 49px 31px -28px rgba(93, 134, 194, 0.12);
+    margin-bottom: 1em;
+  }
+
+  .near-status-container .heading {
+    color: $pov-skyblue;
+  }
+
+  .near-status-container .heading.error {
+    color: $pov-error;
+  }
+
+  .closeIcon {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    transition: all 300ms;
+    cursor: pointer;
+    padding: 0.25em;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 0.25em;
+    fill: $dark-grey;
+    background: 0px 0px 3.03px rgba(0, 0, 0, 0.2);
+  }
+
+  .closeIcon:hover {
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .actionBtnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .actionBtn {
+    width: 12em;
+    border: 1px solid transparent;
+    border-radius: 0.7em;
+    padding: 0.75em 0;
+    transition: all 300ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2em;
+    cursor: pointer;
+  }
+
+  .errorBtn {
+    background: black;
+    color: white;
+    transition: all 300ms;
+  }
+
+  .errorBtn:hover {
+    background: $grey;
+  }
+
+  .actionBtn._1 {
+    background: $pov-skyblue;
+    color: white;
+    position: relative;
+  }
+
+  .actionBtn._2 {
+    background: $white;
+    color: $pov-skyblue;
+    display: flex;
+    align-items: center;
+    border-color: $pov-skyblue;
+  }
+
+  .actionBtn._1:hover {
+    background: $pov-liteblue;
+  }
+
+  .actionBtn._2:hover {
+    background: $pov-skyblue;
+    color: white;
+  }
+
+  .actionBtn._2 img:last-child {
+    display: none;
+  }
+
+  .actionBtn._2:hover img:last-child {
+    display: block;
+  }
+
+  .actionBtn._2:hover img:first-child {
+    display: none;
+  }
+
+  .iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .iconContainer img {
+    width: 1em;
+  }
+
+  .detailsContainer {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .url {
+    flex: 1;
+    max-width: 20em;
+    border: 1px solid #e5e8eb;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0.25em 1em;
+    font-size: 0.85rem;
+  }
+
+  .errorMsg {
+    width: 100%;
+    max-width: 32em;
+    max-height: 8em;
+    color: $dark-grey;
+    overflow: auto;
+    text-align: center;
+    padding: 0.25em 1em;
+    font-size: 0.85rem;
+    border: 1px solid transparent;
+  }
+
+  .tag {
+    margin-right: 1em;
+    color: $grey;
+  }
+
+  .copyBtn {
+    padding: 0.25em 0.5em;
+    background: $pov-liteblue;
+    color: $white;
+    width: 5em;
+    text-align: center;
+    border: 1px solid #e5e8eb;
+    transition: all 300ms;
+  }
+
+  .copyBtn:hover {
+    background: $pov-liteblue;
+  }
+}

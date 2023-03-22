@@ -1,0 +1,51 @@
+@import "../../../assets/styles/common";
+
+.WMLForm{
+    height: 100%;
+    &Main {
+      &Pod {
+        @include borderRadius0;
+        height: 100%;
+
+      }
+    }
+    &Pod {
+      &0 {
+        max-width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        &Item {
+          &0 {
+            margin:$spacing1 $spacing3;
+            flex: 1 0 auto;
+            min-width: calc(200/16 * 1rem);
+          }
+          &1{
+            width: 100%;
+          }
+          &2{
+            display: flex;
+            flex-direction: column;
+          }
+          &3{
+            display: flex;
+            align-items: center;
+          }
+        }
+
+        &Img {
+          &0 {
+            display: inline;
+            width: calc(100/16 * 1rem);
+            height: auto;
+          }
+        }
+
+
+      }
+    }
+  }
+
+
+

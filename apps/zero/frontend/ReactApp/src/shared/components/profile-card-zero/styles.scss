@@ -1,0 +1,109 @@
+@import "../../../assets/styles/common";
+
+.ProfileCardZero{
+    height: 100%;
+
+    &Main {
+      p,a{
+        font-size: calc(12/16 * 1rem) !important;
+      }
+      &Pod {
+        @include borderRadius1;
+        height: 100%;
+        overflow: auto;
+        &::-webkit-scrollbar{
+          display: none;
+        }
+        background-color: $white;
+        border: calc(1/16 * 1rem) solid $dark-grey;
+        padding:$spacing3;
+        * {
+          text-align: center;
+        }
+
+
+      }
+    }
+    &Pod {
+
+      @for $i from 0 through 2 {
+        &#{$i} {
+          @include FlexColumnCenter;
+        }
+      }
+      &0 {
+
+
+        max-width: 100%;
+        @include FlexColumnCenter;
+
+
+        &Text {
+          &0 {
+            font-size: $display-x-small;
+            font-weight: bold;
+            text-align: center;
+          }
+        }
+
+        &Item {
+          &0 {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+          }
+        }
+
+
+
+      }
+      &1{
+        > *{
+          margin:$spacing3 0 0 0;
+
+        }
+        &Item {
+          &0 {
+            background-color: $grey;
+            border-radius:$border_radius1;
+            padding:$spacing2 $spacing3;
+          }
+        }
+        &Text {
+          &0 {
+            max-height: calc(96/16 * 1rem);
+            overflow: auto;
+            font-size: calc(12/16 * 1rem) ;
+            &::-webkit-scrollbar{
+              display: none;
+            }
+          }
+        }
+      }
+      &2{
+        > *{
+          margin:$spacing3 0 0 0;
+        }
+        &Item {
+          &0 {
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+          }
+          &1{
+            border-radius: 100%;
+            border: calc(1/16 * 1rem) solid $dark-grey;
+            padding:$spacing1;
+          }
+          &2 {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+
+
+

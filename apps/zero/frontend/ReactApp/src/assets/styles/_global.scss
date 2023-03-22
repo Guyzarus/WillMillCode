@@ -1,0 +1,81 @@
+@import "./color_pallete";
+@import "./fonts";
+
+:root{
+  --app-transition-time:1s
+}
+
+html{
+  font-size: 16px;
+}
+
+* {
+  &:not(h1,h2,h3,h4,h5,h6,span,p){
+    transition: all var(--app-transition-time);
+  }
+}
+
+@mixin GlobalBtn0Hover{
+  background-color: transparent;
+  color:$black;
+}
+@mixin GlobalBtn1Hover{
+  background-color: $pov-skyblue;
+  color:$white;
+}
+
+@mixin GlobalScroll0{
+  &::-webkit-scrollbar {
+    background-color: transparent;
+  }
+}
+
+.Global{
+  &Scroll {
+    &0 {
+      @include GlobalScroll0
+    }
+  }
+  &Text {
+    &0 {
+      font-weight: bold;
+    }
+  }
+  &Icon {
+    &0 {
+      background-color: $grey;
+      padding:calc(15/16 * 1rem);
+      border-radius: 100%;
+      font-size: $display-small;
+    }
+  }
+  &Btn {
+    &0 {
+      &:hover,&Chosen{
+        @include GlobalBtn1Hover;
+
+      }
+      color:$black;
+      padding:$spacing3;
+      font-family: inherit;
+      font-weight: 600;
+      letter-spacing: 0.025em;
+      transition: all .5s;
+
+
+    }
+    &1{
+      &:hover,&Chosen{
+        @include GlobalBtn0Hover;
+        border:calc(1/16 * 1rem) solid $pov-skyblue;
+        padding:$spacing3;
+      }
+      @include GlobalBtn1Hover;
+      padding:$spacing3;
+      font-family: inherit;
+      font-weight: 600;
+      letter-spacing: 0.025em;
+      transition: all .5s;
+    }
+  }
+}

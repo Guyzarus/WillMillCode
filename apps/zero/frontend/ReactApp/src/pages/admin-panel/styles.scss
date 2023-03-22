@@ -1,0 +1,39 @@
+@import "../../assets/styles/common";
+
+.AdminPanelLayout{
+    height: 100%;
+    &Main {
+      &Pod {
+        @include borderRadius0;
+        height: 100%;
+        padding:0 $spacing5;
+      }
+    }
+    &Pod {
+      &0 {
+        max-width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+      }
+
+      &1{
+        margin: 0 0 $spacing5 0;
+        display: flex;
+        flex-direction: column;
+        > * {
+          margin: 0 $spacing3 0 0;
+        }
+      }
+
+      &2{
+        height: calc(400/16 * 1rem);
+      }
+    }
+  }
+
+
+

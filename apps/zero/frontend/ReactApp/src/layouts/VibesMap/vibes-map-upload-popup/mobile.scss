@@ -1,0 +1,41 @@
+@import "../../../assets/styles/media_queries";
+@import "../../../assets/styles/spacing";
+
+@media #{$mobile} {
+  .popup-box {
+    width: 90%;
+    height: 85%;
+  }
+  .image-preview {
+    width: 300px;
+    height: 250px;
+    .uploaded-image {
+      width: 300px;
+      height: 250px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  .upload-button {
+    span {
+      font-size: 12px;
+    }
+    button {
+      font-size: 14px;
+      width: 80px;
+    }
+  }
+  .bereal-photo {
+    margin-top: 20px;
+    .button:first-child {
+    }
+    .capture-button,
+    button:last-child {
+      height: 30px;
+      width: 70px;
+      padding: 0 10px;
+      font-size: 12px;
+      margin-right: 10px;
+    }
+  }
+}

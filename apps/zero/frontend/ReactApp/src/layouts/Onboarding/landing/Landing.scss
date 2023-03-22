@@ -1,0 +1,72 @@
+@import "../../../assets/styles/fonts";
+@import "../../../assets/styles/color_pallete";
+@import "../../../assets/styles/common";
+@import "../../../assets/styles/global";
+@import "../../../assets/styles/modern_scrollbar.scss";
+
+.Landing {
+  background-color: $black;
+  color: $white;
+
+  h5 {
+    font-family: Shrikhand;
+  }
+
+  nav{
+    > *{
+      margin : $spacing4 $spacing4 0 0 !important ;
+    }
+  }
+
+
+
+  &Pod{
+    &0{
+      display: flex;
+      max-width: 80rem;
+      position: relative;
+      margin: auto;
+      height: calc(700/16 * 1rem);
+      padding:$spacing10 0;
+
+      &Text {
+        &0 {
+          font-size: 3.75rem;
+          font-weight: 800;
+          line-height: 1;
+        }
+      }
+      &Item {
+        &0 {
+          z-index: 1;
+          background-color: transparent;
+          flex: 0 0 30%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          > *{
+            margin:$spacing3 0 0 0;
+          }
+        }
+        &1 {
+          display: flex;
+          flex-flow:row nowrap;
+          label{
+            white-space: nowrap;
+          }
+        }
+      }
+      &Img {
+        &0 {
+          inset:0;
+          position: absolute;
+          z-index: 0;
+          margin: 0 auto calc(10/16 * 1rem) auto;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+}

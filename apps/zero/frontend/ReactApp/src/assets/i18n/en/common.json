@@ -1,0 +1,222 @@
+{
+  "global":{
+    "error":"An error occured. Please try again later or contact suppport if the issue persists",
+    "back":"Back",
+    "success":"Action Completed Succesfully",
+    "updateFail":"Failed to update!",
+    "pageTitles":{
+      "createEvent":"Proof of Vibes Create Event",
+      "editEvent":"Proof of Vibes Edit Event",
+      "admin":"Proof of Vibes Admin",
+      "siteUnavailable":"Proof of Vibes Site Unavailable",
+      "home":"Proof of Vibes",
+      "vibesMap":"Proof of Vibes Vibes Map",
+      "profile":"Proof of Vibes Profile",
+      "settings":"Proof of Vibes Settings",
+      "register":"Proof of Vibes Register",
+      "login":"Proof of Vibes Login",
+      "capture":"Proof of Vibes Capture",
+      "previewUpload":"Proof of Vibes Preview Upload",
+      "privacyPolicy":"Proof of Vibes Privacy Policy",
+      "membershipProtection":"Proof of Vibes Membership Protection"
+    }
+  },
+  "ManageEvents":{
+    "forms":[
+      {
+        "title":"Images",
+        "fields":{
+          "mainImg":{
+            "label":"Main Image(Limit 1)",
+            "errorMsgs":{
+              "required":"This field is required",
+              "fileExt":"Please provide image files with the .png or .jpg extension attached"
+            }
+          },
+          "altImgs":{
+            "label":"Alt Images(Limit 4)",
+            "errorMsgs":{
+              "fileExt":"Please provide image files with the .png or .jpg extension attached"
+            }
+          }
+        }
+      },
+      {
+        "title":"Basics",
+        "fields":{
+          "name":{
+            "label": "Event Name"
+          },
+          "desc":{
+            "label":"Description"
+          },
+          "tribe":{
+            "label":"Tribe Name"
+          },
+          "hostedBy":{
+            "label":"Hosted By"
+          }
+        }
+      },
+      {
+        "title":"Address",
+        "fields":{
+          "isOnline":{
+            "label":"Is Online (Please provide a valid address until further notice)"
+          },
+          "streetNumber":{
+            "label": "Street number"
+          },
+          "streetName":{
+            "label": "Street Name"
+          },
+          "unit":{
+            "label": "Unit"
+          },
+          "city":{
+            "label": "City"
+          },
+          "state":{
+            "label": "State"
+          },
+          "zip":{
+            "label": "Zip Code"
+          },
+          "country":{
+            "label": "Country"
+          }
+        }
+      },
+      {
+        "title":"Vibe Scores",
+        "fields":{
+          "diversityScore":{
+            "label": "Diversity Score"
+          },
+          "densityScore":{
+            "label": "Density Score"
+          },
+          "energyScore":{
+            "label": "Energy Score"
+          },
+          "friendlinessScore":{
+            "label": "Friendliness Score"
+          },
+          "amntOfRatings":{
+            "label":"Amount of Ratings"
+          },
+          "calculatedVibeScore":{
+            "label":"Calculated VibeScore"
+          }
+        }
+      },
+      {
+        "title":"Prices",
+        "addItem":"Add Ticket Type",
+        "removeItem":"Remove Ticket Type",
+        "empty":"This event currently has no ticket types",
+        "fields":{
+          "ticketName":{
+            "label":"Ticket Name"
+          },
+          "cost":{
+            "label": "Ticket Price",
+            "errorMsgs": {
+              "required": "This field is required",
+              "pattern":
+                "This value must be in the form of a number with no decimals or commas (Example $63 is 6300)"
+            }
+          },
+          "currency":{
+            "label":"Currency"
+          }
+        }
+      },
+      {
+        "title":"Event Times",
+        "addItem":"Add Event Time",
+        "removeItem":"Remove Event Time",
+        "empty":"This event currently has no schedules",
+        "fields":{
+          "start":{
+            "label":"Start Time"
+          },
+          "end":{
+            "label":"End Time"
+          }
+        }
+      },
+      {
+        "title":"Provisions",
+        "addItem":"Add Provision",
+        "removeItem":"Remove Provision",
+        "empty":"This event currently has no provisions",
+        "fields":{
+          "name":{
+            "label":"Provision Name"
+          },
+          "desc":{
+            "label":"Description"
+          }
+        }
+      }
+    ],
+    "create":{
+      "title":"Create Event"
+    },
+    "edit":{
+      "title":"Edit Event",
+      "delete":"Delete Event",
+      "deleteConfirmation":"Are you sure you want to delete this event",
+      "deleteSuccess":"Event Sucessfully Deleted",
+      "deleteError":"An error occured while attempting to delete the event please try again later or contact support if the issue persists"
+    },
+    "wmlNotify":{
+      "loadImagesFail":"The application was unable to load the event images at this time. Please try again later or contact support if the issue persists",
+      "generalError":"There are errors with your form please review and try again",
+      "invalidAddress":"This seems not to be a valid address please review the form and try again",
+      "serverError":"An error occured while handling yourrequest. Please try again later or contact suppport if the issue persists",
+      "fileUploadError":"There was an issue while trying to upload the images to storage, Please try again later or contact suppport if the issue persists"
+    },
+    "isOnline":["true","false"],
+    "currencies":["USD"],
+    "countriesOfEarth":["US"],
+    "statesOfUSA":["AL","AK","AZ","AR","CA","CO","CT","DE","FL","GA","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT","VA","WA","WV","WI","WY"]
+  },
+  "AdminPanel":{
+    "backToHomePage":"Back To Home Page",
+    "devsWorking":"The developers are working on this feature for you please hold tight"
+  },
+  "SiteUnavailable":{
+    "title":"Site Unavaiable",
+    "desc":"The site is currently unavailable at this time please visit again later"
+  },
+  "Login":{
+    "wmlNotify":{
+      "logoutFail":"Failed to logout",
+      "loginMissingAccount":"Failed to login. You must create an account first!",
+      "wrongCredentials":"Your credentials are incorrect. Please try again later or contact support if the issue persists"
+    }
+  },
+  "Register":{
+    "wmlNotify":{
+      "passwordMismatch":"Passwords don't match!"
+    }
+  },
+  "EnableCapture":{
+    "allowAccessBtn":"Allow access",
+    "denyAccessBtn":"Don't allow"
+  },
+  "VibesCapture":{
+    "wmlNotify":{
+      "invalidEvent":"Invalid  Event please try again later or contact support if the issue persists",
+      "cameraError":"There was an error while accessing the camera please allow camera access from the url search bar icon or contact support if the issue persists"
+    }
+  },
+  "AuthContext":{
+    "wmlNotify":{
+      "updateUserProfileSuccess":"You have sucessfully updated your profile!",
+      "updateUserProfileError":"There has been an error, please try again later or contact support if the issue persists!"
+    }
+  }
+}

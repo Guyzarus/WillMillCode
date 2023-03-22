@@ -1,0 +1,53 @@
+{
+  "rules": {
+    ".write": "auth.token.role === 'admin'",
+    "BakeryList":{
+      ".read" : true
+    },
+    "GenreList":{
+      ".read" : true
+    },
+    "RestaurantsProvisions":{
+      ".read" : true
+    },
+    "DOEEvents":{
+      ".read" : true
+    },
+    "POSList":{
+      ".read" : true
+    },
+    "DOEUsers":{
+			"data":{
+        "$uid": {
+          ".read": "data.child('userId').val() === auth.uid",
+          ".write": "data.child('userId').val() === auth.uid || data.child('userId').val() === null"
+      	}
+      }
+    },
+    "UserChoicesNFTs":{
+			"data":{
+        "$uid": {
+          ".read": "data.child('userId').val() === auth.uid",
+          ".write": "data.child('userId').val() === auth.uid || data.child('userId').val() === null"
+      	}
+      }
+    },
+    "UserChoices":{
+			"data":{
+        "$uid": {
+          ".indexOn":["userId","eventId"],
+          ".read": "data.child('userId').val() === auth.uid",
+          ".write": "data.child('userId').val() === auth.uid || data.child('userId').val() === null"
+      	}
+      }
+    },
+    "UserRewards":{
+			"data":{
+        "$uid": {
+          ".read": "data.child('userId').val() === auth.uid",
+          ".write": "data.child('userId').val() === auth.uid || data.child('userId').val() === null"
+      	}
+      }
+    }
+  }
+}

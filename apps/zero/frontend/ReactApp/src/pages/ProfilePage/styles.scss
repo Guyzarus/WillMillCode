@@ -1,0 +1,52 @@
+@import "../../assets/styles/common";
+
+.ProfilePage{
+    height: 100%;
+    &Main {
+      &Pod {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding:$spacing4 0 ;
+
+
+      }
+    }
+    &Pod {
+      &0 {
+        max-width: 100%;
+        height: calc(150/16 * 1rem);
+        position: relative;
+
+        &Img {
+          &0 {
+            width:100%;
+            max-height:100%;
+            position: absolute;
+            border-radius: $border_radius1;
+          }
+        }
+
+        &Item{
+          &0{
+            position: absolute;
+            height: 75vh;
+            max-height: calc(1000/16 * 1rem);
+            width: 25%;
+            max-width: calc(500/16 * 1rem);
+            z-index: 1;
+            inset :$spacing7  0 0 $spacing5;
+          }
+        }
+
+      }
+      &1{
+        align-self: flex-end;
+        width: 68%;
+        margin:$spacing5 0 0 0;
+      }
+    }
+  }
+
+
+

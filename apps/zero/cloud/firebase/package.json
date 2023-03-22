@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "build": "npm install",
+    "cleanup":"npx kill-port 9099 9000 9098 9199 4400 4500 5000",
+    "start": "echo $PORT;curl -sL https://github.com/shyiko/jabba/raw/master/install.sh | JABBA_COMMAND=\"install openjdk@1.16.0\" bash;export JAVA_HOME=/opt/render/.jabba/jdk/openjdk@1.16.0;export PATH=$JAVA_HOME/bin:$PATH;npx firebase emulators:start --import='devData' --config \"firebase.preview.json\""
+  },
+  "dependencies": {
+    "firebase-tools": "^11.18.0",
+    "kill-port": "^2.0.1"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

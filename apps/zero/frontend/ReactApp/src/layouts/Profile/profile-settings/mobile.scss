@@ -1,0 +1,27 @@
+@import "../../../assets/styles/media_queries";
+@import "../../../assets/styles/spacing";
+@import "../../../assets/styles/common";
+
+@media #{$mobile} {
+  .ProfileSettings {
+    .left{
+      display: none;
+    }
+    .right{
+      width: 100%;
+      padding:$spacing5;
+      overflow: auto;
+    }
+
+    .rightBorder {
+      margin: 0;
+      justify-content: left;
+    }
+
+    .dataWrapper{
+      flex-direction: column;
+    }
+
+
+  }
+}
